@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-navbar toggleable class="p-4 bg-dark">
+      <b-navbar-brand href="#">
+        <p class="h2 bold text-orange">
+          Create custom motivation letter using GPT-3!
+        </p>
+      </b-navbar-brand>
+    </b-navbar>
+    <Main/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Main from './components/Main.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Main
   }
 }
 </script>
@@ -23,6 +29,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.bold{
+  font-weight: bold !important;
+}
+
+.bg-dark{
+  background-color: #264653;
 }
 </style>
